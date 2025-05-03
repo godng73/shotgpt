@@ -2,9 +2,11 @@ import express from "express";
 import chokidar from "chokidar";
 import path from "path";
 import fs from 'fs';
+import dotenv from "dotenv";
 
 import runGPT from "./run-gpt.js";
 
+dotenv.config();
 const app = express();
 const PORT = 3000;
 
